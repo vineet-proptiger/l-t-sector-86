@@ -3,44 +3,34 @@ import React from 'react'
 
 const highlights = [
   {
-    title: 'Land Parcel: 20 Acres',
-    description: 'Premium residential development spanning 20 acres backed by Larsen & Toubro.',
-    icon: 'fa-solid fa-tree'
+    title: 'Well-Connected Location',
+    description: 'Easy reach to Dwarka Expressway, NH-48 and Southern Peripheral Road - three important routes that make commuting simpler for daily travel.',
+    icon: 'fa-solid fa-road',
   },
   {
-    title: 'Total Towers: 7',
-    description: 'An iconic low-density skyline master plan featuring only 7 premium high-rise towers.',
-    icon: 'fa-solid fa-building'
+    title: 'Large 20-Acre Development',
+    description: 'Spread over expansive acreage with master-planned residences across iconic high-rise towers, featuring lush central greens and landscaped open spaces.',
+    icon: 'fa-solid fa-tree-city',
   },
   {
-    title: 'Total Floors: G+37',
-    description: 'Majestic G+37 high-rise floors offering breathtaking panoramic vistas and fresh air.',
-    icon: 'fa-solid fa-layer-group'
+    title: 'Trusted Developer Background',
+    description: 'L&T Realty is the real estate arm of Larsen & Toubro, a well-known name in engineering and construction, bringing that experience into this project.',
+    icon: 'fa-solid fa-building-shield',
   },
   {
-    title: '3 & 4 BHK Apartments',
-    description: 'Thoughtfully designed luxury residences with sizes available on request.',
-    icon: 'fa-solid fa-house-chimney'
+    title: 'Spacious Home Formats',
+    description: '3 BHK and 4 BHK homes planned for families who want extra room for children, guests or working from home.',
+    icon: 'fa-solid fa-house-chimney',
   },
   {
-    title: 'Only 4 Units Per Core',
-    description: 'Low-density development with only 4 apartments per core ensuring maximum privacy.',
-    icon: 'fa-solid fa-door-closed'
+    title: 'Growing New Gurgaon Belt',
+    description: 'Located in an area that has been seeing steady residential growth, with more housing and infrastructure coming up around it.',
+    icon: 'fa-solid fa-bullseye',
   },
   {
-    title: '40+ Curated Amenities',
-    description: 'Curated lifestyle amenities for wellness, sports, children play areas, and social gatherings.',
-    icon: 'fa-solid fa-shapes'
-  },
-  {
-    title: 'Total Units: 800–900',
-    description: 'Planned with approximately 3.6 million sq. ft. development potential across 800 to 900 homes.',
-    icon: 'fa-solid fa-users'
-  },
-  {
-    title: 'Prime Sector 86 Address',
-    description: 'Strategically located in Sector 86, Gurugram with swift access to Dwarka Expressway & NH-48.',
-    icon: 'fa-solid fa-route'
+    title: 'Good Long-Term Potential',
+    description: 'A large land parcel in a developing corridor can be worth watching for both end use and long-term value.',
+    icon: 'fa-solid fa-sack-dollar',
   },
 ]
 
@@ -55,12 +45,12 @@ const Highlights = ({ setIsOpen }) => {
             PROJECT HIGHLIGHTS
           </span>
           <h2 className="text-[#111111] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight md:whitespace-nowrap">
-            Highlights of L&T Sector 86 Gurugram
+            Highlights of L&T Reality Sector 86  Gurugram
           </h2>
         </div>
 
-        {/* 8 Cards: 4 per row on desktop */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-7">
+        {/* 6 Cards: 3 per row on desktop */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7">
           {highlights.map((item, i) => (
             <div
               key={i}

@@ -1,10 +1,13 @@
+import { SITE_URL } from '../lib/config'
+
 export default function robots() {
+  const baseUrl = SITE_URL || 'https://lntrealtysector86.com'
   return {
     rules: {
       userAgent: '*',
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://ltsector86gurugram.co.in/sitemap.xml',
+    sitemap: `${baseUrl}/sitemap.xml`,
   }
 }

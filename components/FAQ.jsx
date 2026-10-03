@@ -3,38 +3,38 @@ import React, { useState } from 'react'
 
 const faqData = [
   {
-    question: 'What configurations are available at L&T Sector 86 Gurugram?',
+    question: 'What configurations are available at L&T Reality Sector 86  Gurugram?',
     answer: (
       <>
-        L&T Sector 86 Gurugram offers spacious <strong className="font-semibold text-[#222222]">3 BHK and 4 BHK luxury residences</strong> with modern layouts, expansive balconies, premium interiors, and refined architecture by L&T Realty.
+        L&T Reality Sector 86  Gurugram offers spacious <strong className="font-semibold text-[#222222]">3 BHK and 4 BHK luxury residences</strong> with modern layouts, expansive balconies, premium interiors, and refined architecture by L&T Realty.
       </>
     ),
   },
   {
-    question: 'Is L&T Sector 86 Gurugram RERA registered?',
+    question: 'Is L&T Reality Sector 86  Gurugram RERA registered?',
     answer: (
       <>
-        Yes, <strong className="font-semibold text-[#222222]">L&T Sector 86 Gurugram</strong> is registered with the Haryana Real Estate Regulatory Authority (HARERA) under RERA Registration No: <strong className="font-semibold text-[#222222]">RC/REP/HARERA/GGM/1081/813/2026/53</strong>.
+        Yes, <strong className="font-semibold text-[#222222]">L&T Reality Sector 86  Gurugram</strong> is registered with the Haryana Real Estate Regulatory Authority (HARERA) under RERA Registration No: <strong className="font-semibold text-[#222222]">RC/REP/HARERA/GGM/1081/813/2026/53</strong>.
       </>
     ),
   },
   {
-    question: 'How big is L&T Sector 86 Gurugram and how many towers does it have?',
+    question: 'How big is L&T Reality Sector 86  Gurugram and how many towers does it have?',
     answer:
-      'L&T Sector 86 Gurugram is spread across a prime 20-acre land parcel featuring 7 high-rise towers rising up to G+37 floors, with only 4 apartments per core and a total of 800–900 luxury units.',
+      'L&T Reality Sector 86  Gurugram is spread across a prime 20-acre land parcel featuring 7 high-rise towers rising up to G+37 floors, with only 4 apartments per core and a total of 800–900 luxury units.',
   },
   {
-    question: 'Where exactly is L&T Sector 86 Gurugram located?',
+    question: 'Where exactly is L&T Reality Sector 86  Gurugram located?',
     answer: (
       <>
-        L&T Sector 86 is strategically located in <strong className="font-semibold text-[#222222]">Sector 86, Gurugram</strong>, offering excellent connectivity to <strong className="font-semibold text-[#222222]">Dwarka Expressway, NH-48, CPR, Cyber City, and IGI Airport</strong>.
+        L&T Reality Sector 86  is strategically located in <strong className="font-semibold text-[#222222]">Sector 86, Gurugram</strong>, offering excellent connectivity to <strong className="font-semibold text-[#222222]">Dwarka Expressway, NH-48, CPR, Cyber City, and IGI Airport</strong>.
       </>
     ),
   },
   {
-    question: 'Is L&T Sector 86 Gurugram a good investment?',
+    question: 'Is L&T Reality Sector 86  Gurugram a good investment?',
     answer:
-      "Yes, L&T Sector 86 Gurugram is considered a top-tier investment due to Larsen & Toubro's legacy of engineering excellence, prime Sector 86 location, 40+ curated amenities, low-density development, and high capital appreciation potential in Gurugram.",
+      "Yes, L&T Reality Sector 86  Gurugram is considered a top-tier investment due to Larsen & Toubro's legacy of engineering excellence, prime Sector 86 location, 40+ curated amenities, low-density development, and high capital appreciation potential in Gurugram.",
   },
 ]
 

@@ -71,11 +71,11 @@ const Hero = ({ setIsOpen }) => {
               <div className="mb-3 sm:mb-4">
                 <div className="flex flex-wrap items-baseline gap-2.5 sm:gap-3.5 mb-1.5">
                   <h1 className="text-white font-black tracking-tight leading-[1.08] text-[28px] xs:text-[32px] sm:text-[38px] md:text-[44px] m-0">
-                    L&T Sector 86
+                    L&T Reality Sector 86 
                   </h1>
-                  <span className="text-[10px] sm:text-[11px] uppercase tracking-[1.5px] font-semibold text-[#fed215] bg-[#f5b800]/20 border border-[#f5b800]/40 px-2.5 py-0.5 rounded-full self-center">
+                  {/* <span className="text-[10px] sm:text-[11px] uppercase tracking-[1.5px] font-semibold text-[#fed215] bg-[#f5b800]/20 border border-[#f5b800]/40 px-2.5 py-0.5 rounded-full self-center">
                     Pre-Launch • Sector 86, Gurugram
-                  </span>
+                  </span> */}
                 </div>
 
                 {/* Brand Tagline & Location Row */}
@@ -167,7 +167,7 @@ const Hero = ({ setIsOpen }) => {
                 </div>
               </div>
 
-              {/* Project RERA Number Box */}
+              {/* Project RERA Number Box
               <div className="mt-4">
                 <div className="inline-flex items-center bg-white/[0.06] border border-white/15 rounded-lg py-2.5 px-4 shadow-sm text-xs sm:text-[13.5px] backdrop-blur-sm transition-all hover:border-white/30">
                   <i className="fas fa-shield-halved text-emerald-400 mr-2 text-[13px]" />
@@ -179,6 +179,7 @@ const Hero = ({ setIsOpen }) => {
                   </span>
                 </div>
               </div>
+              */}
 
             </div>
 
@@ -233,7 +234,7 @@ const Hero = ({ setIsOpen }) => {
                 </div>
 
                 {/* LeadForm */}
-                <LeadForm formName="L&T Sector 86 Hero Form" btnText="Get Cost Sheet on WhatsApp" />
+                <LeadForm formName="L&T Reality Sector 86  Hero Form" btnText="Get Cost Sheet on WhatsApp" />
 
                 {/* Instant Actions (Call & Visit on Mobile) */}
                 <div className="mt-3.5 pt-3.5 border-t border-white/10 flex items-center justify-between text-[11.5px] sm:text-xs text-white/80">

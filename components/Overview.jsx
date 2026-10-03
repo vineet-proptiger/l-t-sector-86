@@ -16,7 +16,7 @@ const Overview = ({ setIsOpen }) => {
             <div className="relative w-full max-w-[480px] h-[320px] sm:h-[380px] md:h-[430px] lg:h-[470px] rounded-[20px] overflow-hidden shadow-[0_10px_35px_rgba(0,0,0,0.08)]">
                <Image 
                  src={overviewImage} 
-                 alt="About L&T Sector 86 Gurugram" 
+                 alt="About L&T Reality Sector 86  Gurugram" 
                  fill 
                  className="object-cover" 
                  sizes="(max-width: 1024px) 100vw, 50vw" 
@@ -39,7 +39,7 @@ const Overview = ({ setIsOpen }) => {
               <div className="mb-5 pr-0 lg:pr-6">
                 <div className={`text-[#6c757d] text-[15px] leading-[1.7] text-justify ${!isExpanded ? 'line-clamp-5 overflow-hidden' : ''}`}>
                   <p className="m-0 mb-3">
-                    <strong className="text-[#111111]">L&T Sector 86 Gurugram</strong> brings its legacy of engineering excellence to Gurugram, with a premium residential development spanning 20 acres. Backed by Larsen &amp; Toubro, the project reflects decades of expertise and quality. Planned with approximately 3.6 million sq. ft. development potential, it will offer thoughtfully designed high-rise residences, refined architecture, contemporary living spaces, and a well-planned community.
+                    <strong className="text-[#111111]">L&T Reality Sector 86  Gurugram</strong> brings its legacy of engineering excellence to Gurugram, with a premium residential development spanning 20 acres. Backed by Larsen &amp; Toubro, the project reflects decades of expertise and quality. Planned with approximately 3.6 million sq. ft. development potential, it will offer thoughtfully designed high-rise residences, refined architecture, contemporary living spaces, and a well-planned community.
                   </p>
                   <p className="m-0">
                     Featuring 3 &amp; 4 BHK luxury residences across 7 iconic towers rising up to G+37 floors, the project embodies modern sophistication, extensive landscaped open greens, 40+ curated amenities, and only 4 apartments per core.

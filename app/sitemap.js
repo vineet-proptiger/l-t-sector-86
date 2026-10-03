@@ -1,4 +1,6 @@
-const BASE_URL = 'https://ltsector86gurugram.co.in'
+import { SITE_URL } from '../lib/config'
+
+const BASE_URL = SITE_URL || 'https://lntrealtysector86.com'
 
 export default function sitemap() {
   return [

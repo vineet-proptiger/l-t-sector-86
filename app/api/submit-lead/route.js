@@ -38,11 +38,9 @@ export async function POST(request) {
     /* ── Required fields ── */
     let phone = get('phone').replace(/\D/g, '')
     if (phone.length > 10) phone = phone.slice(-10)
-    if (phone.length > 0 && phone.length < 10) {
+    
+    if (phone.length === 0) {
       return Response.json({ status: false, msg: 'Invalid phone number' })
-    }
-    if (phone.length === 10 && !/^[6-9]\d{9}$/.test(phone)) {
-      return Response.json({ status: false, msg: 'Phone number must start with 6, 7, 8, or 9' })
     }
     const email = get('email')
 
@@ -60,7 +58,7 @@ export async function POST(request) {
     const projectName = get('projectName')
     const nameParts = fullName.trim().split(/\s+/)
     const firstName = nameParts[0] || ''
-    const lastName = nameParts[1] || firstName
+    const lastName = nameParts.slice(1).join(' ') || ''
 
     /* ── Tracking ── */
     const utmSource = get('utm_source') || 'Microsite'
@@ -91,7 +89,6 @@ export async function POST(request) {
       LastName: lastName,
       Email: email,
       Mobile: phone,
-      Comments: comments,
 
       utm_source: utmSource,
       utm_medium: utmMedium,
@@ -149,7 +146,6 @@ export async function POST(request) {
       gbraid,
       wbraid,
 
-      query: comments || 'Please arrange a callback',
       device: get('device'),
       userIP,
 

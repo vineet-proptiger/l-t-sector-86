@@ -19,7 +19,7 @@ const VirtualTour = ({ setIsOpen }) => {
     >
       <Image
         src={virtualTourImage}
-        alt="L&T Sector 86 Gurugram Virtual Tour"
+        alt="L&T Reality Sector 86  Gurugram Virtual Tour"
         fill
         className="object-cover"
         quality={100}

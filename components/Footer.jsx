@@ -30,9 +30,9 @@ const Footer = () => (
       {/* ── Developer Description ── */}
       <p 
         data-aos="fade-up" data-aos-delay="100"
-        className="text-[#a1a1aa] text-[15px] sm:text-[16px] leading-[1.8] max-w-[920px] mb-10"
+        className="text-[#a1a1aa] text-[15px] sm:text-[16px] leading-[1.8] max-w-[920px] mb-10 text-justify sm:text-center"
       >
-        L&T Realty brings its legacy of engineering excellence to Gurugram, with a premium residential development spanning 20 acres. Backed by Larsen &amp; Toubro, the project reflects decades of expertise, uncompromising quality, and cutting-edge architectural design.
+        Larsen &amp; Toubro (L&amp;T) is one of India’s leading engineering, technology, construction, and infrastructure conglomerates, with over eight decades of experience. The group has delivered landmark projects across transportation, buildings, power, water, heavy engineering, and digital infrastructure. Through L&amp;T Realty, its engineering expertise extends to residential and commercial developments, combining quality construction, modern design, innovation, and contemporary lifestyles.
       </p>
 
       {/* ── RERA Number Box ── */}
