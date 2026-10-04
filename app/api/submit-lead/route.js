@@ -125,7 +125,7 @@ export async function POST(request) {
 
     // Append new tracking parameters from the URL
     const newTrackingParams = {
-      google_campaign_id: get('google_campaign_id'),
+      google_campaign_id: campaignName || utmCampaign,
       google_ad_group_id: get('google_ad_group_id'),
       google_ad_group_name: get('google_ad_group_name'),
       google_ad_id: get('google_ad_id'),
@@ -147,6 +147,7 @@ export async function POST(request) {
       utm_gclid: get('utm_gclid'),
       utm_gbraid: get('utm_gbraid'),
       utm_wbraid: get('utm_wbraid'),
+      ip_address: userIP,
     }
 
     Object.entries(newTrackingParams).forEach(([key, value]) => {
