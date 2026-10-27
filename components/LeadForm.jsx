@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
-import { buildTrackingFields } from '../lib/formMeta'
+import { buildTrackingFields, isTestMode } from '../lib/formMeta'
 
 const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Now' }) => {
   const [formData, setFormData] = useState({ fullname: '', email: '', phone: '' })
@@ -20,12 +20,13 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Now' }) => {
     if (!/^[6-9]\d{9}$/.test(formData.phone)) { setError('Phone number must start with 6, 7, 8, or 9'); return }
     setError(''); setLoading(true)
     const tracking = buildTrackingFields()
+    const testModeActive = isTestMode()
 
-    // --- GCLID-SPECIFIC BROWSER LIMIT ---
+    // --- GCLID-SPECIFIC BROWSER LIMIT (Bypassed in test/debug mode) ---
     let currentCount = 0;
     let safeGclid = '';
     
-    if (tracking.gclid) {
+    if (tracking.gclid && !testModeActive) {
       safeGclid = tracking.gclid;
       const cookieRegex = new RegExp(`(?:^|; )lead_trk_${PROJECT_ID}_${safeGclid}=([^;]*)`);
       const cookieMatch = document.cookie.match(cookieRegex);
@@ -75,7 +76,7 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Now' }) => {
       const res = await fetch(API_ENDPOINT, { method: 'POST', body: payload })
       const data = await res.json()
       if (data.status) {
-        if (tracking.gclid) {
+        if (tracking.gclid && !testModeActive) {
           const newCount = currentCount + 1;
           if (typeof document !== 'undefined') document.cookie = `lead_trk_${PROJECT_ID}_${safeGclid}=${newCount}; max-age=2592000; path=/`;
           
@@ -96,7 +97,6 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Now' }) => {
         }
         setSuccess(true)
         if (typeof window !== 'undefined') {
-          localStorage.setItem('_lsub_done', '1')
           window.dataLayer = window.dataLayer || []
           const nameParts = formData.fullname.trim().split(' ')
           window.dataLayer.push({
