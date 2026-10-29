@@ -45,7 +45,7 @@ const Highlights = ({ setIsOpen }) => {
             PROJECT HIGHLIGHTS
           </span>
           <h2 className="text-[#111111] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight md:whitespace-nowrap">
-            Highlights of L&T Reality Sector 86  Gurugram
+            Highlights of L&T Realty Sector 86  Gurugram
           </h2>
         </div>
 

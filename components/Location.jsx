@@ -102,7 +102,7 @@ const Location = () => {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="strict-origin-when-cross-origin"
-              title="L&T Reality Sector 86  Gurugram Google Maps Location"
+              title="L&T Realty Sector 86  Gurugram Google Maps Location"
               className="w-full h-full block flex-1"
             />
             {/* Direct Google Maps Navigation Button */}

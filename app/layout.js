@@ -41,16 +41,16 @@ const nephilm = localFont({
 
 export const metadata = {
   metadataBase: new URL('https://lntrealtysector86.com'),
-  title: 'L&T Reality Sector 86  Gurugram | Luxury 3 & 4 BHK Apartments By L&T Realty',
-  description: 'L&T Reality Sector 86  Gurugram offers luxury 3 & 4 BHK residences by L&T Realty. Backed by Larsen & Toubro across 20 acres with 40+ curated lifestyle amenities. Enquire for details!',
+  title: 'L&T Realty Sector 86  Gurugram | Luxury 3 & 4 BHK Apartments By L&T Realty',
+  description: 'L&T Realty Sector 86  Gurugram offers luxury 3 & 4 BHK residences by L&T Realty. Backed by Larsen & Toubro across 20 acres with 40+ curated lifestyle amenities. Enquire for details!',
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'L&T Reality Sector 86  Gurugram | Luxury 3 & 4 BHK Apartments By L&T Realty',
-    description: 'L&T Reality Sector 86  Gurugram offers luxury 3 & 4 BHK residences by L&T Realty. Backed by Larsen & Toubro across 20 acres with 40+ curated lifestyle amenities. Enquire for details!',
+    title: 'L&T Realty Sector 86  Gurugram | Luxury 3 & 4 BHK Apartments By L&T Realty',
+    description: 'L&T Realty Sector 86  Gurugram offers luxury 3 & 4 BHK residences by L&T Realty. Backed by Larsen & Toubro across 20 acres with 40+ curated lifestyle amenities. Enquire for details!',
     url: 'https://lntrealtysector86.com',
-    siteName: 'L&T Reality Sector 86  Gurugram',
+    siteName: 'L&T Realty Sector 86  Gurugram',
     type: 'website',
   },
   icons: {

@@ -5,7 +5,7 @@
 @import 'aos/dist/aos.css';
 
 /* ═══════════════════════════════════════════════════════════════
-   THEME VARIABLES — L&T Reality Sector 86  Gurugram
+   THEME VARIABLES — L&T Realty Sector 86  Gurugram
    ═══════════════════════════════════════════════════════════════ */
 :root {
   /* ── Accent Palette (L&T Realty Signature Golden Yellow & Contrast Black) ── */
@@ -557,7 +557,7 @@
   }
 }
 
-/* ─── L&T Reality Sector 86  Hero Styles ─────────────────────────────────── */
+/* ─── L&T Realty Sector 86  Hero Styles ─────────────────────────────────── */
 .hero-section {
   font-family: var(--font-poppins), 'Poppins', sans-serif;
 }
